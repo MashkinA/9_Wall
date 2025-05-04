@@ -3,7 +3,31 @@ body {
     font-family: 'Arimo';
     color: #F3F6F9;
 }
+
 .wrapper {
+    display: flex;
+}
+.userBar {
+    width: 20%;
+    height: 100vh;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+.mainBar {
+    width: 55%;
+    height: 100vh;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+.addBar {
+    width: 25%;
+    height: 100vh;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+
+/*.wrapper {
     margin: auto;
     width: 930px;
 }
