@@ -1,71 +1,3 @@
-body {
-    background-color: #181818;
-    font-family: 'Arimo';
-    color: #F3F6F9;
-}
-
-.wrapper {
-    display: flex;
-}
-.userBar {
-    width: 20vw;
-    height: 100vh;
-    border: 1px solid white;
-    box-sizing: border-box;
-}
-.userBar_logo {
-    margin-top: 6.25vh;
-    margin-bottom: 6.25vh;
-    padding-left: 5vw;
-    height: 6vh;
-    box-sizing: border-box;
-}
-.userBar_logo_icon {
-    height: 6vh;
-    box-sizing: border-box;
-}
-.userBar_menu_refs {
-    margin-left: 5vw;
-    margin-bottom: 3vh;
-    width: 15vw;
-    height: 5vh;
-    display: flex;
-    gap: 1vw;
-    font-size: 2.5vh;
-    line-height: 5vh;
-    box-sizing: border-box;
-}
-.userBar_menu_refs_icon {
-    box-sizing: border-box;
-}
-.userBar_profile {
-    position: absolute;
-    bottom: 6.25vh;
-    display: flex;
-    gap: 1vw;
-    height: 10vh;
-    width: 20vw;
-    box-sizing: border-box;
-}
-.userBar_profile_photo {
-    margin-left: 5vw;
-    border: 2px solid red;
-    border-radius: 5vh;
-    box-sizing: border-box;
-}
-.userBar_profile_photo_img {
-    height: 10vh;
-    box-sizing: border-box;
-}
-.userBar_profile_nameblock_name {
-    margin-top: 1vh;
-    font-size: 2vh;
-}
-.userBar_profile_nameblock_id {
-    margin-top: 1vh;
-    font-size: 1.5vh;
-    color: gray;
-}
 
 
 
@@ -87,12 +19,11 @@ body {
 
 
 
-.mainBar {
-    width: 55%;
-    height: 100vh;
-    border: 1px solid blue;
-    box-sizing: border-box;
-}
+
+
+
+
+
 .addBar {
     width: 25%;
     height: 100vh;
