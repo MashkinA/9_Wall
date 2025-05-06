@@ -1,7 +1,7 @@
 .mainBar {
     width: 55vw;
     height: 100vh;
-    border: 1px solid blue;
+    border-right: 1px solid #FFBFBF;
     box-sizing: border-box;
 }
 .mainBar_header {
@@ -11,7 +11,7 @@
     display: flex;
     position: relative;
     box-sizing: border-box;
-    border: 1px solid red;
+    border-bottom: 0.5px solid #FFBFBF;
 }
 .mainBar_header_h {
     font-size: 3vh;
@@ -22,4 +22,44 @@
     right: 6vw;
     height: 6vh;
     box-sizing: border-box;
+    color: #FFBFBF;
+}
+.mainBar_1stPostArea{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    height: 12vh;
+    padding-left: 5vw;
+    box-sizing: border-box;
+    display: flex;
+    gap: 1vw;
+}
+.mainBar_input {
+    width: 43.5vw;
+    box-sizing: border-box;
+    background-color: #181818;
+    border: none;
+    outline: none;
+    color: #FFBFBF;
+    font-size: 21px;
+    opacity: 50%;
+}
+.mainBar_2ndPostArea{
+    padding-bottom: 1vh;
+    height: 6vh;
+    padding-left: 5vw;
+    box-sizing: border-box;
+    display: flex;
+    gap: 1vw;
+    border-bottom: 1px solid #FFBFBF;
+}
+.mainBar_postBtn {
+    margin-left: 23.5vw;
+    height: 5vh;
+    width: 10vw;
+    background-color: #FFBFBF;
+    border: none;
+    border-radius: 1vh;
+    font-size: 2vh;
+    font-family: 'Arimo';
+    color: #181818;
 }

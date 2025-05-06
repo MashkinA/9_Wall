@@ -1,7 +1,7 @@
 .userBar {
     width: 20vw;
     height: 100vh;
-    border: 1px solid white;
+    border-right: 1px solid #FFBFBF;
     box-sizing: border-box;
 }
 .userBar_logo {
