@@ -1,8 +1,10 @@
 .userBar {
     width: 20vw;
     height: 100vh;
-    border-right: 1px solid #FFBFBF;
+    background-color: #181818;
+    border-radius: 5vh;
     box-sizing: border-box;
+
 }
 .userBar_logo {
     margin-top: 6.25vh;

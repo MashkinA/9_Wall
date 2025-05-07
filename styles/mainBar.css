@@ -1,7 +1,6 @@
 .mainBar {
-    width: 55vw;
+    width: 53vw;
     height: 100vh;
-    border-right: 1px solid #FFBFBF;
     box-sizing: border-box;
 }
 .mainBar_header {
@@ -11,7 +10,8 @@
     display: flex;
     position: relative;
     box-sizing: border-box;
-    border-bottom: 0.5px solid #FFBFBF;
+    background-color: #181818;
+    border-radius: 5vh;
 }
 .mainBar_header_h {
     font-size: 3vh;
@@ -23,6 +23,10 @@
     height: 6vh;
     box-sizing: border-box;
     color: #FFBFBF;
+}
+.mainBar_postArea {
+    background-color: #181818;
+    border-radius: 5vh;
 }
 .mainBar_1stPostArea{
     padding-top: 1vh;
