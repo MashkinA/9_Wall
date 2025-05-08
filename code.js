@@ -26,10 +26,17 @@ function clearInput() {
 function renderPost() {
     let ListHTML = '';
     list.forEach(element => {
-        ListHTML += 
-        `<li class="">
-            <span class="string">${element}</span>
-        </li>`; 
+        ListHTML +=
+        `
+        <li><div class="mainBar_posts_element">
+            <div id="" class="mainBar_element_divlogo">
+                <img class="mainBar_element_logo" src="/assets/icons/account.svg" alt="">
+            </div>
+            <div class="mainBar_element_info">
+                Username #username date
+                ${element}
+            </div>
+        </div></li>`; 
         
     });
     postsNode.innerHTML = `<ol>${ListHTML}</ol>`;

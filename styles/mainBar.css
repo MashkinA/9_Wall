@@ -67,3 +67,16 @@
     font-family: 'Arimo';
     color: #181818;
 }
+.mainBar_posts_element {
+    margin-bottom: 1vh;
+    display: flex;
+    background-color: #181818;
+}
+.mainBar_element_divlogo {
+    width: 5vw;
+    box-sizing: border-box;
+}
+.mainBar_element_logo {
+    width: 4vw;
+    box-sizing: border-box;
+}

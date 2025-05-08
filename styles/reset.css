@@ -23,7 +23,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
  display: block;
 }
-
+ol {
+   list-style-type:  none;
+}
 
 blockquote, q {
  quotes: none;
