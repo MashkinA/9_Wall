@@ -1,5 +1,5 @@
 const UserLogo = '/assets/icons/account.svg';
-const UserName = 'MashkinA';
+const UserName = `MashkinA`;
 const UserNameId = `#0001`;
 let PostLikes = 0;
 
@@ -14,13 +14,13 @@ const idNode = document.getElementById('userBar_profileId');
 const photoNode = document.getElementById('userBar_profilePhoto');
 
 /** */
-
 const init = () => {
-    nameNode.innerHTML = UserName.value;
-    idNode.innerText = UserNameId.value;
-    photoNode.innerHTML = `<img class="userBar_profile_photo_img" src="${UserLogo.value}" alt="">`;
+    nameNode.innerText = UserName;
+    idNode.innerText = UserNameId;
+    photoNode.innerHTML = `<img class="userBar_profile_photo_img" src='${UserLogo}' alt="">`;
 };
-init;
+init();
+
 
 postBtnNode.addEventListener('click', function(){
     if (!inputNode.value) {
@@ -68,9 +68,13 @@ const renderPost = () => {
                 <img class="mainBar_element_logo" src="${element.Post_userLogo}" alt="">
             </div>
             <div class="mainBar_element_info">
-                <div>${element.Post_userName} ${element.Post_userId} ${element.Post_Date}</div>
-                <div>${element.Post_Text}</div>
-                <div>${element.Post_likes}</div>
+                <div class="mainBar_element_1stStr"><span class="mainBar_element_info_name">${element.Post_userName}</span> <span class="mainBar_element_info_id">${element.Post_userId}</span> <span class="mainBar_element_info_date">${element.Post_Date}</span></div>
+                <div class="mainBar_element_info_text">${element.Post_Text}</div>
+                
+                <div class="mainBar_element_info_like">
+                <img class="mainBar_element_info_like_img" src="/assets/icons/homeLike.svg" alt="">
+                ${element.Post_likes}
+                </div>
             </div>
         </div></li>`; 
         

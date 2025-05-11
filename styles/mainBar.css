@@ -72,9 +72,13 @@
     margin-bottom: 1vh;
     display: flex;
     background-color: #181818;
+    border-radius: 5vh;
 }
 .mainBar_element_divlogo {
-    width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6vw;
     box-sizing: border-box;
 }
 .mainBar_element_logo {
@@ -82,5 +86,26 @@
     box-sizing: border-box;
 }
 .mainBar_element_info {
+    display: inline;
+}
+.mainBar_element_1stStr {
     display: block;
+    padding-top: 2vh;
+}
+.mainBar_element_info_name {
+    font-size: 2.3vh;
+}
+.mainBar_element_info_id {
+    color: gray;
+}
+.mainBar_element_info_date {
+    color: gray;
+}
+.mainBar_element_info_text {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.mainBar_element_info_like_img {
+    margin-bottom: 1vh;
+    height: 1.5vh;
 }
