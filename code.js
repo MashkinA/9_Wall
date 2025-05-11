@@ -1,7 +1,6 @@
 const UserLogo = '/assets/icons/account.svg';
 const UserName = `MashkinA`;
 const UserNameId = `#0001`;
-let PostLikes = 0;
 
 /** */
 
@@ -27,19 +26,40 @@ postBtnNode.addEventListener('click', function(){
         return
     }
 
-    let postElement = createPost(UserLogo,UserName,UserNameId,inputNode.value,PostLikes);
+    let postElement = createPost(UserLogo,UserName,UserNameId,inputNode.value);
     clear();
     trackPost(postElement);
     renderPost();
 });
 
+const openLikes = () => {
+    likeNode = document.querySelectorAll('.mainBar_element_info_like_img');
+    likeNode.forEach((item, index) => {
+        item.addEventListener('click', function(){
+            if (list[index].Post_likes_status === false) {
+                list[index].Post_likes_status = true;
+                list[index].Post_likes++;
+                
+
+            } else {
+                list[index].Post_likes_status = false;
+                list[index].Post_likes--;
+            };
+            renderPost();
+        });
+    });
+    
+};
+    
+    
 
 
 
 
-const createPost = (logo, name, id, text, likes) => {
+const createPost = (logo, name, id, text) => {
     const currentDate = new Date();
     const dt = `${currentDate.getDate()}.${currentDate.getMonth()}.${currentDate.getFullYear()}  ${currentDate.getHours()}:${currentDate.getMinutes()}`;
+    const likes = 0;
     const Post = {
         Post_userLogo: logo,
         Post_userName: name,
@@ -47,8 +67,8 @@ const createPost = (logo, name, id, text, likes) => {
         Post_Date: dt,
         Post_Text: text,
         Post_likes: likes,
+        Post_likes_status: false,
     };
-    console.log(Post);
     return Post;
 };
 const clear = () => {
@@ -80,4 +100,7 @@ const renderPost = () => {
         
     });
     postsNode.innerHTML = `<ol>${ListHTML}</ol>`;
+
+    openLikes();
 };
+
