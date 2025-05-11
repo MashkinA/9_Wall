@@ -71,12 +71,12 @@ const renderPost = () => {
                 <div class="mainBar_element_1stStr"><span class="mainBar_element_info_name">${element.Post_userName}</span> <span class="mainBar_element_info_id">${element.Post_userId}</span> <span class="mainBar_element_info_date">${element.Post_Date}</span></div>
                 <div class="mainBar_element_info_text">${element.Post_Text}</div>
                 
-                <div class="mainBar_element_info_like">
-                <img class="mainBar_element_info_like_img" src="/assets/icons/homeLike.svg" alt="">
-                ${element.Post_likes}
+                <div class="mainBar_element_info_underline">
+                    <img class="mainBar_element_info_like_img" src="/assets/icons/homeLike.svg" alt="">
+                    ${element.Post_likes}
                 </div>
             </div>
-        </div></li>`; 
+        </div></li>`;
         
     });
     postsNode.innerHTML = `<ol>${ListHTML}</ol>`;
