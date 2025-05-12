@@ -39,7 +39,7 @@ const openLikes = () => {
             if (list[index].Post_likes_status === false) {
                 list[index].Post_likes_status = true;
                 list[index].Post_likes++;
-                
+
 
             } else {
                 list[index].Post_likes_status = false;
@@ -103,4 +103,5 @@ const renderPost = () => {
 
     openLikes();
 };
+
 

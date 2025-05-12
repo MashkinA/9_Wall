@@ -1,0 +1,36 @@
+.addBar {
+    width: 25vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.addBar_busyBar {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: block;
+    box-sizing: border-box;
+    background-color: #181818;
+    border-radius: 5vh;
+}
+.addBar_busyBarTitle {
+    margin-bottom: 2vh;
+    width: 15vw;
+    text-align: center;
+    font-size: 3vh;
+    line-height: 3vh;
+}
+.addBar_busyBarTryStr {
+    margin-bottom: 3vh;
+    width: 15vw;
+    text-align: center;
+    font-size: 2vh;
+    line-height: 2vh;
+}
+.addBar_busyBarTask {
+    width: 15vw;
+    text-align: center;
+    font-size: 3vh;
+    line-height: 3vh;
+    color: #FFBFBF;
+}
